@@ -4,7 +4,7 @@ export class Livre {
         this.titre = titre;
         this.auteur = auteur;
         this.stock = stock;
-    }
+    } 
 
     augmenterStock(qte) {
         if (qte > 0) {
