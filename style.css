@@ -1,40 +1,149 @@
+/* ======== RESET ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+/* ======== GLOBAL ======== */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    background: #e9edf1;
+    padding: 40px;
+    color: #2b2b2b;
 }
 
-h1, h2 {
-    color: #333;
-}
-
-section {
+/* ======== TITRES ======== */
+h1 {
+    text-align: center;
     margin-bottom: 40px;
+    color: #1e3a5f;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
-form input, form button, select, input {
-    padding: 6px;
-    margin-right: 5px;
+h2 {
+    margin-bottom: 20px;
+    color: #1e3a5f;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
+/* ======== SECTIONS ======== */
+section {
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border-left: 6px solid #1e3a5f;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+/* ======== FORMULAIRES ======== */
+form,
+.ligne-ajout {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+input,
+select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #c6ccd4;
+    font-size: 1rem;
+    background: #f8f9fb;
+}
+
+input:focus,
+select:focus {
+    border-color: #1e3a5f;
+    outline: none;
+    box-shadow: 0 0 3px rgba(30,58,95,0.5);
+}
+
+/* ======== BOUTONS ======== */
+button {
+    background: #1e3a5f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+button:hover {
+    background: #152a46;
+}
+
+/* ======== TABLEAUX ======== */
 table {
-    border-collapse: collapse;
     width: 100%;
-    margin-top: 15px;
+    border-collapse: collapse;
+    margin-top: 10px;
 }
 
-table, th, td {
-    border: 1px solid #ccc;
+thead {
+    background: #1e3a5f;
+    color: white;
 }
 
 th, td {
-    padding: 8px;
-    text-align: left;
+    padding: 14px;
+    border-bottom: 1px solid #d8dfe6;
+    font-size: 0.95rem;
 }
 
-button {
-    cursor: pointer;
+tbody tr:nth-child(even) {
+    background: #f5f7fa;
 }
 
+tbody tr:hover {
+    background: #e9eef5;
+}
+
+/* ======== BOUTONS SUPPRIMER ======== */
+.btn-supprimer-ligne,
+.btn-supprimer-livre,
+.btn-supprimer-emprunt {
+    background: #b33232;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.btn-supprimer-ligne:hover,
+.btn-supprimer-livre:hover,
+.btn-supprimer-emprunt:hover {
+    background: #8d1f1f;
+}
+
+/* ======== BOUTON VIDAGE HISTORIQUE ======== */
+#vider-historique {
+    background: #b33232;
+}
+
+#vider-historique:hover {
+    background: #8d1f1f;
+}
+
+/* ======== EXPORT MESSAGE ======== */
+#message-export {
+    margin-top: 10px;
+    font-style: italic;
+    color: #1e3a5f;
+}
+
+/* ======== LIGNES ENTRE SECTIONS ======== */
 hr {
+    border: none;
+    height: 2px;
+    background: #c6ccd4;
     margin: 40px 0;
 }
