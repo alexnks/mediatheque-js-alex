@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Médiathèque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Gestion de la Médiathèque</h1>
+
+    <!-- SECTION : Catalogue -->
+    <section id="catalogue">
+        <h2>Catalogue des livres</h2>
+
+        <form id="form-ajout-livre">
+            <input type="text" id="titre" placeholder="Titre" required>
+            <input type="text" id="auteur" placeholder="Auteur" required>
+            <input type="number" id="stock" placeholder="Stock" min="1" required>
+            <button type="submit">Ajouter le livre</button>
+        </form>
+
+        <table id="table-livres">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Titre</th>
+                    <th>Auteur</th>
+                    <th>Stock</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- JS -->
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- SECTION : Emprunt -->
+    <section id="emprunt">
+        <h2>Emprunt en cours</h2>
+
+        <div class="ligne-ajout">
+            <select id="select-livre"></select>
+            <input type="number" id="quantite" placeholder="Quantité" min="1">
+            <button id="ajouter-ligne">Ajouter</button>
+        </div>
+
+        <table id="table-emprunt">
+            <thead>
+                <tr>
+                    <th>Livre</th>
+                    <th>Quantité</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- via JS -->
+            </tbody>
+        </table>
+
+        <button id="valider-emprunt">Valider l’emprunt</button>
+    </section>
+
+    <hr>
+
+    <!-- SECTION : Historique -->
+    <section id="historique">
+        <h2>Historique des emprunts</h2>
+
+        <button id="vider-historique">Vider l’historique</button>
+
+        <table id="table-historique">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Détails</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--  JS -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
