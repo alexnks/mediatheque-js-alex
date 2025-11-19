@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+
+<head> 
     <meta charset="UTF-8">
     <title>Médiathèque</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <h1>Gestion de la Médiathèque</h1>
@@ -31,7 +33,6 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- JS -->
             </tbody>
         </table>
     </section>
@@ -57,7 +58,6 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- JS -->
             </tbody>
         </table>
 
@@ -71,6 +71,8 @@
         <h2>Historique des emprunts</h2>
 
         <button id="vider-historique">Vider l’historique</button>
+        <button id="exporter-historique">Exporter l’historique</button>
+        <p id="message-export"></p>
 
         <table id="table-historique">
             <thead>
@@ -81,11 +83,12 @@
                 </tr>
             </thead>
             <tbody>
-                <!--  JS -->
+
             </tbody>
         </table>
     </section>
 
-    <script src="app.js"></script>
+    <script type="module" src="classes/app.js"></script>
 </body>
+
 </html>
