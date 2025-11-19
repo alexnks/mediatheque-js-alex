@@ -1,4 +1,3 @@
-// classes/Emprunt.js
 export class Emprunt {
     constructor(lignes, usager = "Anonyme") {
         this.date = new Date().toLocaleString();
@@ -6,3 +5,4 @@ export class Emprunt {
         this.usager = usager;
     }
 }
+ 
